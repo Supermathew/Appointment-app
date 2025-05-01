@@ -1,0 +1,126 @@
+/* Appointment Booking Plugin Styles */
+.ab-booking-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.ab-booking-container * {
+    box-sizing: border-box;
+}
+
+.ab-booking-container h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ab-form-group {
+    margin-bottom: 15px;
+}
+
+.ab-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.ab-form-group input, 
+.ab-form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.ab-date-picker {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ab-slots-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.ab-time-slot {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ab-time-slot:hover {
+    background-color: #f8f9fa;
+}
+
+.ab-time-slot.ab-selected {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.ab-time-slot.ab-unavailable {
+    background-color: #f1f1f1;
+    color: #999;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}
+
+.ab-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.ab-submit-btn:hover {
+    background-color: #2980b9;
+}
+
+.ab-submit-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.ab-message {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.ab-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.ab-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    .ab-slots-container {
+        grid-template-columns: 1fr;
+    }
+}
