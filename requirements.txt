@@ -1,4 +1,12 @@
+asgiref==3.8.1
+Brotli==1.1.0
 Django==4.2.9
-djangorestframework==3.14.0
 django-cors-headers==4.3.0
+djangorestframework==3.14.0
+psycopg2-binary==2.9.10
 python-dateutil==2.8.2
+pytz==2025.2
+six==1.17.0
+sqlparse==0.5.3
+tzdata==2025.2
+whitenoise==6.9.0
